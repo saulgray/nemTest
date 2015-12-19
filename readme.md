@@ -18,7 +18,25 @@
     cd nemTest
     bower install
     npm install
-    foundation watch
 ```
+You must add a config file, this houses the google docs info.
+Make sure the config file is at the same level as `gulpfile.js`
+```
+nano config.json
+```
+you must either create a google doc, or get the keys from Saul.
+I will fix this in the future so it can be built without worrying about the `config.json` file.
 
-Now you should have a webpage that opened to `localhost:8765`
+##### After the config file is in place
+
+```
+foundation watch
+```
+Now you should have a webpage that opened to `localhost:8760`.
+This port can be changed in `gulpfile.js`.
+
+To build for production, use:
+```
+foundation watch --production
+```
+This will minify JS, compress images, etc.
