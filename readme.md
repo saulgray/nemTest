@@ -44,4 +44,4 @@ This will minify JS, compress images, etc.
 Take the contents of the `dist` folder, and place them on your server, easy as that :)
 
 
-**Note the majority of the gulpfile, and most of the code, is thanks to [Zurb Foundation](https://github.com/zurb/foundation-zurb-template)**
+*Note the majority of the gulpfile, and most of the code, is thanks to [Zurb Foundation](https://github.com/zurb/foundation-zurb-template)*
