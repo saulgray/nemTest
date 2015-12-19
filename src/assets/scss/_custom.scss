@@ -1,0 +1,595 @@
+// FOUNDATION OVERRIDES --START
+ul, ol, dl{
+  margin-bottom: 0;
+}
+// bug fix for margin extending too far in footer
+footer .row .row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+// preset margins suck, need to fix that
+#buyWrap .small-12.med-large-expand, .small-4, .medium-5, .medium-5 ul{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0;
+}
+// FOUNDATION OVERRIDES --END
+
+*{
+  margin: 0;
+  list-style-type: none;
+  font-weight: 300;
+}
+p{
+  font-size: 17px;
+}
+button:focus{
+  // border: transparent !important;
+  box-shadow: none;
+  background-image: none;
+  outline: none;
+}
+@mixin centerChildren {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navWrap{
+  background: $test;
+}
+nav{
+  a{
+  color: $black !important;
+}
+  .top-bar-left img{
+    height: 65px;
+  }
+  .top-bar-right ul:first-child{
+    padding-top: 24px;
+  }
+}
+
+
+
+
+.client{
+  background: url(../img/clientBackground.jpg);
+  background-size: cover;
+}
+.client .columns{
+  background: $test;
+  border: $borderTest;
+  img{
+    width:670px !important;
+    min-width:670px !important;
+    overflow: visible;
+  }
+}
+.client{
+  h3{
+    font-weight: 700;
+  }
+  .large-6{
+    p{
+      max-width: 520px;
+      font-weight: 300;
+    }
+    p:last-child{
+      max-width: 520px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}
+
+
+.clientBottom{
+  text-align: right;
+  p{
+    max-width: 400px;
+    margin: 0 0 0 auto;
+  }
+  .columns{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: $test;
+    border: $borderTest;
+  }
+}
+.client .row.align-middle{
+  margin: 0 auto;
+}
+
+
+
+
+#about{
+  background: url(../img/waterFog.jpg);
+  background-size: cover;
+  padding-top: $pad * 3;
+  padding-bottom: $pad * 3;
+}
+.bubbleWrap{
+  &.row{
+    max-width: 1400px;
+  }
+  .column{
+    background-color: #fabe00;
+    border: $borderTest;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    // margin: 20px;
+    @include centerChildren;
+    text-align:center;
+  }
+  .column.secondary{
+    background-color: #86c0ea;
+    height: 140px;
+    width: 140px;
+    max-width: 140px;
+    max-height: 140px;
+  }
+  .column.tertiary{
+    background-color: #2ab8b0;
+    height: 130px;
+    width: 130px;
+    max-width: 130px;
+    max-height: 130px;
+  }
+  .video{
+    width: 250px;
+    max-width: 250px;
+    background: transparent;
+    img{
+      border-radius: 150px;
+    }
+  }
+}
+.bubbleWrap.row1{
+  button:nth-child(1){
+     margin-top: 20px;
+     margin-left: 40px;
+  }
+  button:nth-child(2){
+     margin-top: 80px;
+     margin-left: 60px;
+  }
+  button:nth-child(3){
+     margin-top: 20px;
+     margin-left: 20px;
+  }
+  button:nth-child(4){
+     margin-top: 5px;
+     margin-left: 20px;
+  }
+  button:nth-child(5){
+     margin-top: 70px;
+     margin-left: 20px;
+  }
+  button:nth-child(6){
+     margin-top: 5px;
+     margin-left: 40px;
+  }
+}
+.bubbleWrap.row2{
+  button:nth-child(1){
+     margin-top: -60px;
+     margin-left: 40px;
+  }
+  button:nth-child(2){
+     margin-top: -10px;
+     margin-left: 20px;
+  }
+  button:nth-child(3){
+    //  margin-top: -10px;
+    //  margin-left: -1000px;
+  }
+  button:nth-child(4){
+     margin-top: 10px;
+     margin-left: 10px;
+  }
+  button:nth-child(5){
+     margin-top: 10px;
+     margin-left: 10px;
+  }
+}
+.bubbleWrap.row3{
+  button:nth-child(1){
+     margin-top: 0px;
+     margin-left: 70px;
+  }
+  button:nth-child(2){
+     margin-top: 80px;
+     margin-left: 60px;
+  }
+  button:nth-child(3){
+     margin-top: 20px;
+     margin-left: 20px;
+  }
+  button:nth-child(4){
+     margin-top: 5px;
+     margin-left: 20px;
+  }
+  button:nth-child(5){
+     margin-top: 70px;
+     margin-left: 20px;
+  }
+  button:nth-child(6){
+     margin-top: 5px;
+     margin-left: 40px;
+  }
+}
+
+#buy{
+  background: url(../img/geometry.png);
+  padding-top: $pad * 6;
+  padding-bottom: $pad * 6;
+  // margin-bottom: -45px;
+
+}
+#buyWrap{
+  text-align: center;
+  img{
+    min-width: 64px;
+    height: 64px;
+  }
+  .arrows{
+    padding-top: (64px - 50px) / 2;
+    img{
+      min-width: 50px;
+      height: 50px;
+    }
+  }
+  div{
+    margin-right: $pad;
+    // background-color: $test;
+    //   border: $borderTest;
+  }
+  div:last-child{
+    margin-right: 0px;
+  }
+  .row.icons{
+    margin: 0 auto;
+    margin-top: $pad;
+    .columns{
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+#buyWrap .align-center{
+  margin: 0;
+  margin-top: $pad * 3;
+  min-height: 48px;
+  span{
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+#buyBox1, #buyBox2, #buyBox3{
+  padding-bottom: $pad;
+  background: $gray;
+  span button{
+    padding-top: $pad * 1.5;
+  }
+}
+#buyBox3 .medium-8{
+  padding-top: 12px;
+}
+#buyBar{
+  text-align: center;
+    img{
+    height: 20px;
+  }
+}
+
+
+
+
+
+
+
+.divTopper img{
+  width: 100%;
+  // padding-top: -45px;
+  // background: blue;
+  // margin-bottom: 0;
+  // padding-bottom: 0;
+}
+#help{
+  // // margin-top: -20px;
+  // background: pink;
+  li{
+      margin-top: $pad / 3;
+      margin-bottom: $pad / 3;
+}
+}
+.helpWrap{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-weight: 300;
+  .fa-square{
+    color: $light-gray;
+  }
+}
+
+.helpWrap div:first-child{
+  text-align: center;
+  font-size: 32px;
+
+}
+.helpText{
+  color: $primary-color;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+#newsWrap{
+  background-color: $medium-gray;
+  padding-top: $pad * 5;
+  padding-bottom: $pad * 5;
+  #newsFeed ul{
+    @include grid-row();
+    li{
+      // margin-right: $pad;
+      // margin-left: -$pad;
+      background-color: $white;
+      @include grid-column(4);
+      // padding-right: $pad;
+      .tweet{
+       font-weight: 300;
+       overflow: hidden !important;
+      }
+      a span{
+         font-weight: 300;
+         color: $green !important;
+      }
+    }
+    @include breakpoint(med-large up) {
+    li:first-of-type{
+      width: calc(33.33% - 13px);
+      min-height: 360px;
+      .tweet{
+        margin-top: 25%;
+        margin-bottom: 20%;
+      }
+    }
+    li:nth-of-type(2){
+      width: calc(33.33% - 14px);
+      margin-right: $pad;
+      margin-left: $pad;
+      min-height: 360px;
+      .tweet{
+        margin-top: 25%;
+        margin-bottom: 20%;
+      }
+    }
+    li:last-of-type{
+      // margin-right: -$pad;
+      width: calc(33.33% - 13px);
+      min-height: 360px;
+      .tweet{
+        margin-top: 25%;
+        margin-bottom: 20%;
+      }
+    }
+  }
+  @include breakpoint(medium down) {
+  li:first-of-type{
+    width: calc(100%);
+    margin-bottom: $pad;
+        // min-height: 360px;
+  }
+  li:nth-of-type(2){
+    width: calc(100%);
+        margin-bottom: $pad;
+
+  }
+  li:last-of-type{
+    width: calc(100%);
+
+  }
+}
+  }
+}
+#newsFeed{
+
+}
+.user a span:first-of-type {
+   display:none;
+   margin-right:25px;
+   color: $dark-gray !important;
+   font-weight: 500 !important;
+}
+.user a span:last-of-type {
+   display: block;
+   margin-top:7px;
+   font-size: 200%;
+   color: $dark-gray !important;
+   font-weight: 500 !important;
+}
+.tweet{
+   margin-top: 60px;
+}
+.timePosted{
+   text-align: right;
+   font-weight: 300;
+   a{
+     color: $black;
+   }
+}
+.media img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 200px !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 30px;
+}
+.user a > span {
+   float:left;
+   font-weight: 300;
+}
+.tweet{
+   color: $light-gray !important;
+}
+.tweet a > span:before {
+   background-color: transparent !important;
+   height: 0px;
+   margin-bottom: 0px;
+}
+.tweet a > span:after {
+   background-color: blue !important;
+   height: 0px;
+   margin-bottom: 0px;
+}
+.tweet a:hover{
+   color: $greenLite !important;
+   @include mui-animation(fade);
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+  background: $dark-gray;
+  color: $white;
+  font-size: 14px;
+  a{
+    color: $white;
+  }
+  // .large-4 p{
+  //   padding-right: 40px;
+  // }
+  .upperFooter{
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+  img{
+    width: 200px;
+  }
+  i{
+    padding: 8px 0px 8px 6px;
+  }
+  .columns, .column{
+    padding-left: 0px !important;
+    padding-right:0px !important;
+  }
+}
+.footerResources{
+  margin-top: 35px;
+  li{
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  h6{
+    font-weight: 900;
+  }
+}
+.lowerFooter{
+  div:first-child{
+    font-size: 12px;
+  }
+  div:last-child{
+    text-align: right;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+}
+.lowerFooterWrap{
+  background-color: $darkest-gray;
+  color: $gray;
+}
+.fa-border{
+  border-radius: 10px;
+  background:pink;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* BUTTON STYLING START */
+a .btn {
+   border: none;
+   font-family: inherit;
+   font-size: inherit;
+   color: inherit;
+   background: none;
+   cursor: pointer;
+   padding: 6px 6px !important;
+   display: inline-block;
+   margin: 0px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   outline: none;
+   position: relative;
+   border: 2px solid $dark-gray;
+   border-radius: 2px;
+   color: $dark-gray;
+   font-size: 12px;
+   overflow: hidden;
+   padding: 15px !important;
+   margin: 13px 0px 13px 0px;
+   font-weight: 500;
+   // replace with motion ui
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+}
+a .btn:after {
+   content: '';
+   position: absolute;
+   z-index: -1;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+}
+a .btn-1e:after {
+   width: 100%;
+   height: 0;
+   top: 50%;
+   left: 50%;
+   background: $dark-gray;
+   opacity: 0;
+   // replace with motion ui
+   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+   -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+   -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+   transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+a .btn-1e:hover,
+a .btn-1e:active {
+   color: $white;
+   opacity: 1;
+   z-index: 60;
+}
+/* background size */
+a .btn-1e:hover:after {
+   height: 620%;
+   opacity: 1;
+}
+/* BUTTON STYLING END */
