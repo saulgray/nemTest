@@ -13,7 +13,7 @@ var config   = require('./config.json');
 var isProduction = !!(argv.production);
 
 // Port to use for the development server.
-var PORT = 8765;
+var PORT = 8760;
 
 // Browsers to target when prefixing CSS.
 var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
